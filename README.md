@@ -1,9 +1,21 @@
 # CLI-Command-Generator-Backend
 
-## `PLANNING`
+## `BACKEND PLANNING`
 
-### `TOOLS`
+### `BACKEND TOOLS`
   Node \
   Express \
   Knex \
   Postgres\
+  Zod \
+
+### `TABLES`
+
+#### `User`
+  Columns:
+  -id --- integer \
+  -email --- string \
+  -created_at --- date\
+  -modified_at ---date \
+  -dark_mode ---boolean \
+  
