@@ -22,7 +22,7 @@ Pretty self explanatory. The list of users. Each user has multiple commands.
   -dark_mode ---boolean \
   -password --- hashed string \
   
-#### `base_command`
+#### `base_command table`
 The base trigger of the user's CLI command. For instance `npm jest` or `npx playwright test`. Then the `parameters` table holds all the parameters that go with this command and their various options. 
 
 Each base_command is linked to one user and multiple parameters.
@@ -35,4 +35,14 @@ Each base_command is linked to one user and multiple parameters.
    -   -This is where it appears on the user's list of commands. User will be able to reorder them. 
    -   -This reordering might be a stretchgoal 
       
- 
+#### `parameter table`
+-Each base_command can have multiple parameters. E.g. `env=production` `baseURL=https://www.google.com` `-g` etc etc.  \
+-Each row in the table is one of those parameters. \
+-Multiple parameters linked to one base_command, multiple base_commands linked to one user.
+
+  Columns: \
+  -id --- integer \
+  -user_id --- foreign key \
+  -base_command_id --- foreign key \
+  -type --- string 
+  - - e.g. `text`, `number`, `boolean`
