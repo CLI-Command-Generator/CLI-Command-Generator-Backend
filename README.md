@@ -31,8 +31,8 @@ Each base_command is linked to one user and multiple parameters.
   -id --- integer \
   -user_id --- foreign key \
   -command_text --- string (ex. `npx playwright test`) \
-  -STRETCH: order --- integer \
-      -This is where it appears on the user's list of commands. User will be able to reorder them. \
-      -This reordering might be a stretchgoal \
+  -STRETCH: order --- integer 
+   -   -This is where it appears on the user's list of commands. User will be able to reorder them. 
+   -   -This reordering might be a stretchgoal 
       
  
