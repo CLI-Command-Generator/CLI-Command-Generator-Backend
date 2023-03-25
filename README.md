@@ -46,3 +46,7 @@ Each base_command is linked to one user and multiple parameters.
   -base_command_id --- foreign key \
   -type --- string 
   - - e.g. `text`, `number`, `boolean`
+  - - - add a "flag" type too? E.g. `--headed` `-g` `--save-dev`. These would always go at the end
+  - - - -Flag types would be booleans. If true then this parameter is in the command, if not it's not in the command.
+  -order --- number 
+  - -the order in which these parameters appear
