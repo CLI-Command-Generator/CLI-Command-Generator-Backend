@@ -50,3 +50,4 @@ Each base_command is linked to one user and multiple parameters.
   - - - -Flag types would be booleans. If true then this parameter is in the command, if not it's not in the command.
   -order --- number 
   - -the order in which these parameters appear
+  - -need save button
