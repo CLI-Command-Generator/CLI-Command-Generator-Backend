@@ -8,6 +8,7 @@
   Knex \
   Postgres\
   Zod \
+  AWS Amplify - maybe, might find a different host
 
 ### `TABLES`
 
